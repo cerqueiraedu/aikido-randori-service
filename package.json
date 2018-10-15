@@ -1,0 +1,20 @@
+{
+  "name": "aikido-randori-service",
+  "version": "1.0.0",
+  "description": "An Aikido Randori Service",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "api": ""
+  },
+  "author": "Eduardo Cerqueira",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "newrelic": "^4.8.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.12.1"
+  }
+}
