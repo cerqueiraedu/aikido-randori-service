@@ -5,7 +5,9 @@
   "main": "app.js",
   "scripts": {
     "start": "nodemon server.js",
-    "api": ""
+    "api": "",
+    "test": "mocha -t 3000",
+    "test-jenkins": "mocha -t 3000 --reporter xunit --reporter-options output=/build/test-results.xml"
   },
   "author": "Eduardo Cerqueira",
   "license": "ISC",
@@ -15,6 +17,8 @@
     "newrelic": "^4.8.1"
   },
   "devDependencies": {
-    "nodemon": "^1.12.1"
+    "nodemon": "^1.12.1",
+    "chai": "^4.2.0",
+    "mocha": "^3.5.3"
   }
 }

@@ -5,6 +5,7 @@ LABEL description="aikido-randori-service"
 
 COPY server.js .
 COPY ./api ./api
+COPY ./test ./test
 COPY package.json .
 COPY package-lock.json .
 COPY newrelic.js .
@@ -14,5 +15,3 @@ RUN apk --no-cache add --virtual native-deps \
   npm install --quiet node-gyp -g &&\
   npm install --quiet && \
   apk del native-deps
-
-CMD ["node", "server.js"]
